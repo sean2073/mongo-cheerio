@@ -1,0 +1,48 @@
+body{
+  background: url('../images/new-york-times.jpg') repeat;
+  background-size: 600px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.articleBody{
+  height: 200px;
+  font-size: 20px;
+  overflow-y: scroll;
+  line-height: 150%;
+}
+
+#commentName{
+  font-weight: bold;
+  background: #42a5f5;
+  color: white;
+}
+
+.card-panel {
+    border-radius: 52px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+a {
+    color: #0e0e0e;
+}
+nav .brand-logo.center {
+    left: 9%;
+}
+
+h5{
+  color:black;
+}
+
+h5 .commentLable{
+    color: #fafafa;
+    background: #ec0000;
+    text-align: center;
+
+}
