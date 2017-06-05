@@ -1,0 +1,41 @@
+<div class="jumbotron">
+    <div id="overlay">
+      <div class="container">
+        <div class="page-header">
+        <br>
+          <h1>Real News From NY Times</h1>
+          <h2></h2>
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="pageTwo">
+    <div class="row">
+
+      {{#each Article}}
+        <div class="col-sm-6 box">
+          <ul>
+            <li>
+              <h4>{{this.title}}</h4>
+              <a href="{{this.link}}">{{this.link}}</a>
+            </li>
+              <form class="create-update-form" action="/articles/{{this._id}}" method="POST">
+                <input placeholder="Comment" data-id="{{this._id}}" id="comment" type="text" name="body"></input>
+
+                <div class="btn-group-md" role="group" aria-label="...">
+                  <button type="submit" data-id="{{this._id}}" action="/articles/{{this._id}}" method="POST" id="savenote" class="btn btn-success">Add Comment</button>
+                  <button type="submit" data-id="{{this.comment}}" action="/delete/{{this.comment}}?method=delete" method="DELETE"id="deleteComment" class="btn btn-danger">Delete Comment</button>
+                </div>
+              </form>
+          </ul>
+          <h4 class="center"> Articles </h4>
+          <div id="box">
+            <h5>{{this.comment.body}}</h5>
+          </div>
+        </div>
+      {{/each}}
+
+    </div>
+  </div>

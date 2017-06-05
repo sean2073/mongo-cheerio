@@ -1,5 +1,10 @@
 body{
+  /*
   background: url('../images/new-york-times.jpg') repeat;
+   background: url('../images/new-york-times.jpg');
+*/
+
+
   background-size: 600px;
   font-family: 'Dosis', sans-serif;
   font-size: 16px;

@@ -1,18 +1,21 @@
-<div>
-    <h1 class="card z-depth-3 center-align">Articles from New York Times</h1>
-    <div class="row">
-      <div class="col s3"></div>
-      <h5 class="card z-depth-3 center-align col s6">Click the 'Scrape' button to refresh articles</h5>
-    </div>
-</div>
-
-<div class="row">
-  {{#each article}}
-    <div class ="col s6">
-      <div class="card-panel">
-          <h4>{{title}}</h4>
-          <a href = "/readArticle/{{this._id}}" class="btn blue lighten-1" id="btnSignUp">Article Link</a>
+<div class="well">
+    <div id="overlay">
+      <div class="container">
+        <div class="page-header">
+        <br>
+          <h2>Real News From NY Times</h2>
+          <h2></h2>
+          <h3></h3>
+        </div>
       </div>
     </div>
-  {{/each}}
+  </div>
+  <div class="panel panel-warning">
+
+  <div class="panel-heading">
+    <h3 class="panel-title">There are no articles yet!</h3>
+  </div>
+  <div class="panel-body">
+
+  </div>
 </div>
